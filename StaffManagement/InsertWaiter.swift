@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class InsertWaiter {
+class InsertWaiter: NSObject {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     

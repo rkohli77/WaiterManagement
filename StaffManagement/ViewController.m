@@ -11,6 +11,7 @@
 #import "RestaurantManager.h"
 #import "Waiter.h"
 #import "StaffManagement-Swift.h"
+#import "AppDelegate.h"
 
 static NSString * const kCellIdentifier = @"CellIdentifier";
 
@@ -58,9 +59,14 @@ static NSString * const kCellIdentifier = @"CellIdentifier";
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+     AppDelegate *appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
     if (editingStyle == UITableViewCellEditingStyleDelete){
+        Waiter *waiter = self.waiters[indexPath.row];
+        waiter.restaurant = nil;
+        [waiter setValue:nil forKey:@"restaurant"];
         [[[RestaurantManager sharedManager]currentRestaurant] removeStaffObject:self.waiters[indexPath.row]];
         [self waiterList];
+        [appDelegate.managedObjectContext save:nil];
         [[self tableView] reloadData];
     }
 }

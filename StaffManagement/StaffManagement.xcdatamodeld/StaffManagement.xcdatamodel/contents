@@ -10,6 +10,6 @@
     </entity>
     <elements>
         <element name="Restaurant" positionX="-63" positionY="-18" width="128" height="75"/>
-        <element name="Waiter" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="Waiter" positionX="-2" positionY="132" width="128" height="73"/>
     </elements>
 </model>

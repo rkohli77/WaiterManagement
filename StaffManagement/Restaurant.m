@@ -7,7 +7,7 @@
 //
 
 #import "Restaurant.h"
-
+#import "Waiter.h"
 
 @implementation Restaurant
 

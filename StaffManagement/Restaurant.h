@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-
+#import "Waiter.h"
 
 @interface Restaurant : NSManagedObject
 
@@ -22,5 +22,6 @@
 - (void)removeStaffObject:(NSManagedObject *)value;
 - (void)addStaff:(NSSet *)values;
 - (void)removeStaff:(NSSet *)values;
+//- (void) deleteWaiter: (Waiter *)obj;
 
 @end
