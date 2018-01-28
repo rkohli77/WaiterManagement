@@ -57,6 +57,14 @@ static NSString * const kCellIdentifier = @"CellIdentifier";
     return YES;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete){
+        [[[RestaurantManager sharedManager]currentRestaurant] removeStaffObject:self.waiters[indexPath.row]];
+        [self waiterList];
+        [[self tableView] reloadData];
+    }
+}
+
 -(void) waiterList {
     NSSortDescriptor *sortByName = [[NSSortDescriptor alloc]initWithKey:@"name" ascending:YES];
     self.waiters = [[[RestaurantManager sharedManager]currentRestaurant].staff sortedArrayUsingDescriptors:@[sortByName]];

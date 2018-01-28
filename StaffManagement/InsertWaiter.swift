@@ -17,11 +17,13 @@ class InsertWaiter {
     func saveWaiterName(nameStr: String) {
 //        let entity = NSEntityDescription.insertNewObject(forEntityName: "Waiter", into: appDelegate.managedObjectContext)
 //        entity.setValue(nameStr, forKey: "name")
-        let entityDesc = NSEntityDescription.entity(forEntityName: "Waiter", in: appDelegate.managedObjectContext)
-        let managedObj = NSManagedObject(entity: entityDesc!, insertInto: appDelegate.managedObjectContext)
-        managedObj.setValue(nameStr, forKey: "name")
-        let restMan = RestaurantManager()
-        restMan.currentRestaurant().addStaffObject(managedObj)
-        appDelegate.saveContext()
+        if (nameStr.count != 0){
+            let entityDesc = NSEntityDescription.entity(forEntityName: "Waiter", in: appDelegate.managedObjectContext)
+            let managedObj = NSManagedObject(entity: entityDesc!, insertInto: appDelegate.managedObjectContext)
+            managedObj.setValue(nameStr, forKey: "name")
+            let restMan = RestaurantManager()
+            restMan.currentRestaurant().addStaffObject(managedObj)
+            appDelegate.saveContext()
+        }
     }
 }

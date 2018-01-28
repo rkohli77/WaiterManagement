@@ -30,6 +30,9 @@ class AddWaiterViewController: ViewController {
     @IBAction func saveClicked(_ sender: UIButton) {
         let name = self.waiterName.text
         if let waiterName = name {
+            if waiterName.count == 0 {
+               self.waiterName.placeholder = "Please enter a name"
+            }
             insertWaiterName.saveWaiterName(nameStr: waiterName)
         }
         
