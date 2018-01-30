@@ -20,6 +20,7 @@
 		651CBBDD1AB4E4A100F265E8 /* Waiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 651CBBDC1AB4E4A100F265E8 /* Waiter.m */; };
 		D01E133B201D42B000B469F7 /* AddWaiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E133A201D42B000B469F7 /* AddWaiterViewController.swift */; };
 		D01E133D201D50EA00B469F7 /* InsertWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E133C201D50EA00B469F7 /* InsertWaiter.swift */; };
+		D01E133F201E6BF100B469F7 /* ShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E133E201E6BF100B469F7 /* ShiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		D01E1339201D42B000B469F7 /* StaffManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaffManagement-Bridging-Header.h"; sourceTree = "<group>"; };
 		D01E133A201D42B000B469F7 /* AddWaiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWaiterViewController.swift; sourceTree = "<group>"; };
 		D01E133C201D50EA00B469F7 /* InsertWaiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertWaiter.swift; sourceTree = "<group>"; };
+		D01E133E201E6BF100B469F7 /* ShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				651CBBAC1AB4E1CC00F265E8 /* Supporting Files */,
 				D01E133A201D42B000B469F7 /* AddWaiterViewController.swift */,
 				D01E1339201D42B000B469F7 /* StaffManagement-Bridging-Header.h */,
+				D01E133E201E6BF100B469F7 /* ShiftViewController.swift */,
 			);
 			path = StaffManagement;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				651CBBDD1AB4E4A100F265E8 /* Waiter.m in Sources */,
 				651CBBDA1AB4E4A000F265E8 /* Restaurant.m in Sources */,
 				651CBBAF1AB4E1CC00F265E8 /* main.m in Sources */,
+				D01E133F201E6BF100B469F7 /* ShiftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

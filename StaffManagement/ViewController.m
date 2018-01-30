@@ -13,6 +13,8 @@
 #import "StaffManagement-Swift.h"
 #import "AppDelegate.h"
 
+
+
 static NSString * const kCellIdentifier = @"CellIdentifier";
 
 @interface ViewController ()
@@ -74,6 +76,22 @@ static NSString * const kCellIdentifier = @"CellIdentifier";
 -(void) waiterList {
     NSSortDescriptor *sortByName = [[NSSortDescriptor alloc]initWithKey:@"name" ascending:YES];
     self.waiters = [[[RestaurantManager sharedManager]currentRestaurant].staff sortedArrayUsingDescriptors:@[sortByName]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    UIAlertView *messageAlert = [[UIAlertView alloc]
+//                                 initWithTitle:@"Row Selected" message:@"You've selected a row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//    
+//    // Display Alert Message
+//    [messageAlert show];
+
+    Waiter *waiter = self.waiters[indexPath.row];
+    ShiftViewController *otherView=[self.storyboard instantiateViewControllerWithIdentifier:@"shift"];
+  //  [self presentViewController:otherView animated:YES completion:nil];
+    otherView.name = waiter.name;
+    [self.navigationController pushViewController:otherView animated:YES];
+
 }
 
 @end
