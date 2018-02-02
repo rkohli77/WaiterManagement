@@ -34,6 +34,7 @@ class AddWaiterViewController: ViewController {
                self.waiterName.placeholder = "Please enter a name"
             }
             insertWaiterName.saveWaiterName(nameStr: waiterName)
+            navigationController?.popViewController(animated: true)
         }
         
         

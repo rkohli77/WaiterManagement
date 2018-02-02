@@ -22,6 +22,5 @@
 - (void)removeStaffObject:(NSManagedObject *)value;
 - (void)addStaff:(NSSet *)values;
 - (void)removeStaff:(NSSet *)values;
-//- (void) deleteWaiter: (Waiter *)obj;
 
 @end

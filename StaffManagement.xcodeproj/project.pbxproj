@@ -21,6 +21,7 @@
 		D01E133B201D42B000B469F7 /* AddWaiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E133A201D42B000B469F7 /* AddWaiterViewController.swift */; };
 		D01E133D201D50EA00B469F7 /* InsertWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E133C201D50EA00B469F7 /* InsertWaiter.swift */; };
 		D01E133F201E6BF100B469F7 /* ShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E133E201E6BF100B469F7 /* ShiftViewController.swift */; };
+		D0B25E4C2024213400382F8C /* Shift.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B25E4B2024213400382F8C /* Shift.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		D01E133A201D42B000B469F7 /* AddWaiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWaiterViewController.swift; sourceTree = "<group>"; };
 		D01E133C201D50EA00B469F7 /* InsertWaiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertWaiter.swift; sourceTree = "<group>"; };
 		D01E133E201E6BF100B469F7 /* ShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewController.swift; sourceTree = "<group>"; };
+		D0B25E4A202420A300382F8C /* Shift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shift.h; sourceTree = "<group>"; };
+		D0B25E4B2024213400382F8C /* Shift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shift.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				651CBBD81AB4E4A000F265E8 /* Restaurant.h */,
 				651CBBD91AB4E4A000F265E8 /* Restaurant.m */,
 				D01E133C201D50EA00B469F7 /* InsertWaiter.swift */,
+				D0B25E4A202420A300382F8C /* Shift.h */,
+				D0B25E4B2024213400382F8C /* Shift.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				651CBBDA1AB4E4A000F265E8 /* Restaurant.m in Sources */,
 				651CBBAF1AB4E1CC00F265E8 /* main.m in Sources */,
 				D01E133F201E6BF100B469F7 /* ShiftViewController.swift in Sources */,
+				D0B25E4C2024213400382F8C /* Shift.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
